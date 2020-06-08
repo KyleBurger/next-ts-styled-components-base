@@ -65,6 +65,12 @@ export const theme: ITheme = {
 };
 
 export const GlobalStyle = createGlobalStyle<IThemeWrapper>`
+  /* latin-ext */
+  @font-face {
+    font-family: 'Barlow Condensed';
+    src: url('/fonts/Barlow/BarlowCondensed-Black.ttf') format('ttf');
+  }
+
   html {
     overflow-x: hidden;
     overflow-y: scroll;

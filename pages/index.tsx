@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 
 const Index = () => (
   <Layout>
-    <h1>Filmpac Boilerplate</h1>
+    <h1>Filmpac Starter</h1>
     <p>Rest of stuff...</p>
   </Layout>
 );

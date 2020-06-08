@@ -8,15 +8,15 @@ import { GlobalStyle, theme } from './_layout-styles';
 //     <ThemeProvider theme={theme}>
 //       <GlobalStyle />
 //       {/* <Meta /> */}
-//       <MainStyles>
+//       <LayoutContainer>
 //         {/* <Navigation /> */}
 //         <div>Navigation goes here</div>
-//         <ContentContainer>
+//         <MainContainer>
 //           <Page />
-//         </ContentContainer>
+//         </MainContainer>
 //         {/* <Footer /> */}
 //         <div>Footer goes here</div>
-//       </MainStyles>
+//       </LayoutContainer>
 //     </ThemeProvider>
 //   );
 // };
@@ -27,13 +27,13 @@ export default class Layout extends Component {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         {/* <Meta /> */}
-        <MainStyles>
+        <LayoutContainer>
           <div>Insert Navigation Component Here</div>
           {/* <Navigation /> */}
-          <ContentContainer>{this.props.children}</ContentContainer>
+          <MainContainer>{this.props.children}</MainContainer>
           {/* <Footer /> */}
           <div>Insert Footer Component Here</div>
-        </MainStyles>
+        </LayoutContainer>
       </ThemeProvider>
     );
   }
@@ -41,8 +41,5 @@ export default class Layout extends Component {
 
 // export default withLayout;
 
-const MainStyles = styled.main``;
-
-const ContentContainer = styled.section`
-  margin-top: 7.3rem;
-`;
+const MainContainer = styled.main``;
+const LayoutContainer = styled.section``;
