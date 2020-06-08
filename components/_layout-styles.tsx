@@ -20,6 +20,7 @@ interface Colors {
   white20: string;
   white40: string;
   white60: string;
+  blue: string;
   social: SocialColors;
 }
 
@@ -44,6 +45,7 @@ export const theme: ITheme = {
     white20: '#f5f4f6',
     white40: '#f2f2f2',
     white60: '#e0e0e0',
+    blue: '#00b4eb',
 
     social: {
       twitter: '#00aced',
@@ -56,11 +58,11 @@ export const theme: ITheme = {
   },
 
   breakpoints: {
-    desktopsm: '61.875rem', // 990px
-    tablet: '48rem', // 768px
-    phone: '35rem', // 560px
-    phonesm: '30rem', // 480px
-    phonexs: '20rem', // 320px
+    desktopsm: '1028px',
+    tablet: '768px',
+    phone: '560px',
+    phonesm: '480px',
+    phonexs: '320px',
   },
 };
 
@@ -73,19 +75,13 @@ export const GlobalStyle = createGlobalStyle<IThemeWrapper>`
   @font-face {
     font-family: "Barlow Condensed";
     src: url('/fonts/barlow/BarlowCondensed-Light.ttf') format('truetype');
-    font-weight: light, 400;
+    font-weight: light;
   }
 
   @font-face {
     font-family: 'Barlow Condensed';
     src: url('/fonts/barlow/BarlowCondensed-Bold.ttf') format('truetype');
-    font-weight: bold, 600;
-  }
-
-  @font-face {
-    font-family: "Barlow Condensed";
-    src: url('/fonts/barlow/BarlowCondensed-Italic.ttf') format('truetype');
-    font-style: italic, oblique;
+    font-weight: bold;
   }
 
   html {
@@ -95,7 +91,7 @@ export const GlobalStyle = createGlobalStyle<IThemeWrapper>`
 
   html,
   body {
-    font-family: "Barlow Condensed",sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
     font-size: 67.5%;
     margin: 0;
 
