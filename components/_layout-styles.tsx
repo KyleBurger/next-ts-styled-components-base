@@ -65,10 +65,27 @@ export const theme: ITheme = {
 };
 
 export const GlobalStyle = createGlobalStyle<IThemeWrapper>`
-  /* latin-ext */
   @font-face {
     font-family: 'Barlow Condensed';
-    src: url('/fonts/Barlow/BarlowCondensed-Black.ttf') format('ttf');
+    src: url('/fonts/barlow/BarlowCondensed-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: "Barlow Condensed";
+    src: url('/fonts/barlow/BarlowCondensed-Light.ttf') format('truetype');
+    font-weight: light, 400;
+  }
+
+  @font-face {
+    font-family: 'Barlow Condensed';
+    src: url('/fonts/barlow/BarlowCondensed-Bold.ttf') format('truetype');
+    font-weight: bold, 600;
+  }
+
+  @font-face {
+    font-family: "Barlow Condensed";
+    src: url('/fonts/barlow/BarlowCondensed-Italic.ttf') format('truetype');
+    font-style: italic, oblique;
   }
 
   html {

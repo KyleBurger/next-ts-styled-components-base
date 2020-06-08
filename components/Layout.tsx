@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { GlobalStyle, theme } from './_layout-styles';
-// import Meta from './Meta';
+import Meta from './Meta';
+import Navigation from './Navigation';
+import Footer from './Footer';
 
-// const withLayout = (Page) => {
+// export const withLayout = (Page) => {
 //   return (props) => (
 //     <ThemeProvider theme={theme}>
 //       <GlobalStyle />
@@ -26,20 +28,16 @@ export default class Layout extends Component {
     return (
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        {/* <Meta /> */}
+        <Meta />
         <LayoutContainer>
-          <div>Insert Navigation Component Here</div>
-          {/* <Navigation /> */}
+          <Navigation />
           <MainContainer>{this.props.children}</MainContainer>
-          {/* <Footer /> */}
-          <div>Insert Footer Component Here</div>
+          <Footer />
         </LayoutContainer>
       </ThemeProvider>
     );
   }
 }
-
-// export default withLayout;
 
 const MainContainer = styled.main``;
 const LayoutContainer = styled.section``;
