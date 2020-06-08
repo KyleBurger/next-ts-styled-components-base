@@ -1,10 +1,11 @@
 import React from 'react';
+import Layout from '../components/Layout';
 
 const Index = () => (
-  <div>
+  <Layout>
     <h1>Filmpac Boilerplate</h1>
     <p>Rest of stuff...</p>
-  </div>
+  </Layout>
 );
 
 export default Index;
