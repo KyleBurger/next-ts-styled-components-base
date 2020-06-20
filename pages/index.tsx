@@ -3,8 +3,8 @@ import Layout from '../components/Layout';
 
 const Index = () => (
   <Layout>
-    <h1>Filmpac Starter</h1>
-    <p>Rest of stuff...</p>
+    <h1>Next JS w/ Styled Components Starter Template</h1>
+    <p>Hack away!</p>
   </Layout>
 );
 
