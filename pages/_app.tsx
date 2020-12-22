@@ -2,7 +2,7 @@ import React from 'react';
 import App from 'next/app';
 import Head from 'next/head';
 import { ThemeProvider } from 'styled-components';
-import { theme, GlobalStyle } from '../components/_layout-styles';
+import { theme, GlobalStyle } from '../components/common/Layout/_layout-styles';
 
 export default class MyApp extends App {
   render() {
@@ -11,7 +11,7 @@ export default class MyApp extends App {
     return (
       <React.Fragment>
         <Head>
-          <title>GraphQL Job Board</title>
+          <title>Next, Apollo, Typescript &amp; Styled Components</title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
         <ThemeProvider theme={theme}>

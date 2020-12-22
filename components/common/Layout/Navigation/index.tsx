@@ -1,16 +1,17 @@
-import React from 'react';
-import Link from 'next/link';
+import { ReactElement } from 'react';
 import styled from 'styled-components';
 
 interface Props {}
 
-const NavigationComponent = (props: Props) => (
-  <HeaderContainer>
-    <NavContainer>
-      <nav>Insert Navigation Component Here</nav>
-    </NavContainer>
-  </HeaderContainer>
-);
+function NavigationComponent({}: Props): ReactElement {
+  return (
+    <HeaderContainer>
+      <NavContainer>
+        <nav>Insert Navigation Component Here</nav>
+      </NavContainer>
+    </HeaderContainer>
+  );
+}
 
 export default NavigationComponent;
 

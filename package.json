@@ -1,18 +1,23 @@
 {
-  "name": "filmpac",
+  "name": "next-ts-styled-components-base",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@apollo/react-hooks": "^3.1.5",
+    "@apollo/react-hooks": "^4.0.0",
+    "@apollo/react-ssr": "^4.0.0",
     "@next/bundle-analyzer": "^9.4.4",
     "apollo-boost": "^0.4.9",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link-http": "^1.5.17",
     "graphql": "^15.0.0",
-    "next": "^9.4.4",
+    "isomorphic-unfetch": "^3.1.0",
+    "next": "^10.0.3",
     "next-with-apollo": "^5.0.1",
     "node-fetch": "^2.6.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "styled-components": "^5.1.1"
   },
   "scripts": {
